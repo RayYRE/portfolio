@@ -44,9 +44,9 @@
         <h2>Menu</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="FindMine.html">FindMine</a></li>
-          <li><a href="MagicKnight.html">MagicKnight</a></li>
-          <li><a href="PhaseShift.html">PhaseShift</a></li>
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
         </ul>
       </nav>
 
@@ -55,9 +55,31 @@
         <div class="inner">
           <h1>Magic Knight</h1>
           <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-          <p>Magic Knight</p>
-          <p>Magic Knight</p>
-          <p>Magic Knight</p>
+          <h2>INTRODUCTION</h2>
+          <p>
+            I decided to participate the game jam as a team of 2 to create a 2D
+            roguelike with spell mechanics inspired by the game Noita.
+            MagicKnight is a game where you are able to experiment with
+            different combinations of spells to battle the incoming hordes of
+            goblins
+          </p>
+          <h2>INVENTORY</h2>
+          <p>
+            In order to make our inventory scalable and reusable due to having 2
+            different types of inventories, I decided to make use of resources
+            to make it simple and reusable. The way the inventory works is that
+            I edited the built in drag and drop functions to better suit our
+            game. Each slot is a scene that detects the drag and drop of the
+            items The slot then inserts it to it's respective inventory.
+          </p>
+          <h2>Spell system</h2>
+          <p>
+            I decided to implement our spell system by making our spell
+            inventory, a list of resources. The list of resources is then looped
+            in the spell manager to use the spells in order. This allowed us to
+            easily add different types of spells after the base resource was
+            created.
+          </p>
         </div>
       </div>
 

@@ -178,6 +178,7 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
@@ -244,7 +245,7 @@ a {
   -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
   transition: border-bottom-color 0.2s ease, color 0.2s ease;
   text-decoration: none;
-  color: #585858;
+  color: #ffffff;
   border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 }
 
@@ -256,6 +257,21 @@ a:hover {
 strong,
 b {
   font-weight: 900;
+}
+
+c {
+  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+}
+
+c:hover {
+  border-bottom-color: transparent;
+  color: #f2849e !important;
 }
 
 em,
