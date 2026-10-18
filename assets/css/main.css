@@ -2164,21 +2164,26 @@ ul.icons li {
   padding: 1em 0 0 1em;
 }
 
-/* Icons vertical */
+/* Title row (h1 with icons on the right) */
 
-ul.icons.vertical {
-  cursor: default;
-  list-style: none;
-  padding-left: 0;
-  margin: -5em 0 2em -1em;
+.title-row {
   display: flex;
-  flex-direction: column;
-  float: right;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
 }
 
-ul.icons.vertical li {
-  display: inline-block;
-  padding: 1em 0 0 1em;
+.title-row h1 {
+  margin: 0;
+}
+
+.title-row ul.icons {
+  margin: 0 0 0 -1em;
+}
+
+.title-row ul.icons li {
+  padding: 0 0 0 1em;
 }
 
 /* Form */
