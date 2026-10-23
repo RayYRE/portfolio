@@ -22,7 +22,7 @@ export function Award({ children }: { children: ReactNode }) {
 
 function Thumbnail({ project, className }: { project: Project; className: string }) {
   if (project.image) {
-    return <img src={project.image} alt={`${project.title} gameplay`} className={`object-cover ${className}`} />;
+    return <img src={project.image} alt={`${project.title} preview`} className={`object-cover ${className}`} />;
   }
   return (
     <div className={`grid place-items-center bg-surface-hover text-muted ${className}`}>

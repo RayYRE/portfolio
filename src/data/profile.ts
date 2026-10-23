@@ -4,7 +4,7 @@ import { FaGithub, FaItchIo, FaLinkedin } from "react-icons/fa6";
 export type Social = { label: string; href: string; icon: IconType };
 
 export const profile = {
-  name: "Ray Ern Yap",
+  name: "Yap Ray Ern",
   firstName: "Ray Ern",
   tagline: "Computer Science graduate · University of Melbourne",
   email: "rayern@gmail.com",

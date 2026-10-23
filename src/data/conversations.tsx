@@ -58,7 +58,7 @@ const pages: Conversation[] = [
     prompt: "What have you built?",
     answer: () => (
       <>
-        <p>Here are a few things I've worked on — a hackathon web app and two game jam games:</p>
+        <p>Here are a few things I've worked on:</p>
         <div className="grid gap-3">
           {projects.map((p) => (
             <ProjectCard key={p.slug} project={p} />
