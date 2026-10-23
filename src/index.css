@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* Theme tokens. Light is the default; [data-theme] is set in index.html before first paint. */
+:root {
+  --bg: #faf9f5;
+  --surface: #f0eee6;
+  --surface-hover: #e8e6dc;
+  --input: #ffffff;
+  --bubble: #f0eee6;
+  --text: #3d3929;
+  --muted: #73726c;
+  --border: #e5e3da;
+  --accent: #c96442;
+  --accent-hover: #b5573a;
+  --on-accent: #ffffff;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #262624;
+  --surface: #1f1e1d;
+  --surface-hover: #30302e;
+  --input: #30302e;
+  --bubble: #141413;
+  --text: #e5e3dc;
+  --muted: #9c9a92;
+  --border: #3a3936;
+  --accent: #d97757;
+  --accent-hover: #e08a6d;
+  --on-accent: #1f1e1d;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-input: var(--input);
+  --color-bubble: var(--bubble);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-on-accent: var(--on-accent);
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Newsreader", Georgia, ui-serif, serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* "Streaming" reveal: each direct child of .stream fades up one after another. */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.stream > * {
+  animation: fade-up 0.45s ease-out both;
+}
+.stream > :nth-child(2) { animation-delay: 0.08s; }
+.stream > :nth-child(3) { animation-delay: 0.16s; }
+.stream > :nth-child(4) { animation-delay: 0.24s; }
+.stream > :nth-child(5) { animation-delay: 0.32s; }
+.stream > :nth-child(6) { animation-delay: 0.4s; }
+.stream > :nth-child(7) { animation-delay: 0.48s; }
+.stream > :nth-child(n + 8) { animation-delay: 0.56s; }
+
+@keyframes pulse-dot {
+  0%, 80%, 100% { opacity: 0.25; transform: scale(0.8); }
+  40% { opacity: 1; transform: scale(1); }
+}
+
+.thinking-dot {
+  animation: pulse-dot 1.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stream > *,
+  .thinking-dot {
+    animation: none;
+  }
+}

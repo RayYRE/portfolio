@@ -1,178 +1,29 @@
-<!DOCTYPE html>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Yap Ray Ern</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ray Ern Yap</title>
+    <meta name="description" content="Portfolio of Ray Ern Yap, Computer Science graduate from the University of Melbourne." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <script>
+      // Set the theme before first paint to avoid a light/dark flash.
+      (function () {
+        var saved;
+        try { saved = localStorage.getItem("theme"); } catch (e) {}
+        var dark = saved ? saved === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      })();
+    </script>
   </head>
-
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Header -->
-      <header id="header">
-        <div class="inner">
-        </div>
-      </header>
-
-      <!-- Main -->
-      <div id="main">
-        <div class="inner">
-          <header>
-            <div class="title-row">
-              <h1 id="about">YAP RAY ERN</h1>
-
-              <ul class="icons">
-                <li>
-                  <a
-                    href="https://github.com/RayYRE"
-                    class="icon brands style2 fa-github"
-                    ><span class="label">GitHub</span></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://carelesscapybara.itch.io/"
-                    class="icon brands style2 fa-itch-io"
-                    ><span class="label">itchio</span></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/ray-ern-yap/"
-                    class="icon brands style2 fa-linkedin"
-                    ><span class="label">LinkedIn</span></a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <h2 id="resume">ABOUT ME</h2>
-
-            <section style="margin-bottom: 1em">
-              <a href="images/RayErnYap_Resume2026.pdf">CLICK HERE FOR MY RESUME </a>
-            </section>
-
-            <p>
-              Hello, I'm a recent Computer Science graduate from the University of Melbourne with a passion for software development and problem solving.
-
-              I'm particularly interested in backend development, building APIs, and understanding how different parts of a system work together. Through my university projects and personal projects, I've gained hands on experience with JavaScript, Node.js, Express, databases, and API integrations.
-
-              I enjoy taking ideas from concept to working solutions, whether that's collaborating with a team to build a web application or independently developing tools to solve practical problems. I'm always keen to learn new technologies, explore unfamiliar challenges, and improve the way I build software.
-
-              I'm currently looking for opportunities to grow as a software developer, contribute to meaningful projects, and learn from experienced engineers.
-            </p>
-            <span id="projects"></span>
-            <h2>Projects</h2>
-          </header>
-          <section class="tiles">
-            <article class="style1">
-              <span class="image">
-                <img src="images/pic01.jpg" alt="" />
-              </span>
-              <a href="FindMine.html">
-                <h2>Find Mine</h2>
-                <div class="content">
-                  <p>CISSA's Catalyst Hackathon Runner Up Winner</p>
-                  <p>
-                    An interactive map made for live music venues for people to
-                    check their accessibility features
-                  </p>
-                </div>
-              </a>
-            </article>
-            <article class="style2">
-              <span class="image">
-                <img src="images\MagicKnightGIF.gif" alt="" />
-              </span>
-              <a href="MagicKnight.html">
-                <h2>MAGIC KNIGHT</h2>
-                <div class="content">
-                  <p>Ranked 5th in Gameplay UniMelb GMC 2025 MidSem GameJam</p>
-
-                  <p>
-                    A roguelike game where players experiment different
-                    combinations of spells to survive
-                  </p>
-                </div>
-              </a>
-            </article>
-            <article class="style3">
-              <span class="image">
-                <img src="images\PhaseShiftGIF.gif" alt="" />
-              </span>
-              <a href="PhaseShift.html">
-                <h2>PHASE SHIFT</h2>
-                <div class="content">
-                  <p>CISSA x UMGMC Game Jam Submission</p>
-                  <p>
-                    A platformer with a twist — phase between two eras to
-                    navigate an ever-changing world
-                  </p>
-                </div>
-              </a>
-            </article>
-          </section>
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="inner">
-          <section>
-            <h2>Get in touch</h2>
-            <p>Email: rayern@gmail.com</p>
-            <p>Phone Number: +61-434-858-615 (Active - Australia)</p>
-            <p>Phone Number: +60-12-723-7554 (Inactive - Malaysia)</p>
-            <p>WhatsApp: +61-434-858-615</p>
-          </section>
-          <section>
-            <h2>Follow</h2>
-            <ul class="icons">
-              <li>
-                <a
-                  href="https://github.com/RayYRE"
-                  class="icon brands style2 fa-github"
-                  ><span class="label">GitHub</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://carelesscapybara.itch.io/"
-                  class="icon brands style2 fa-itch-io"
-                  ><span class="label">itchio</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/ray-ern-yap/"
-                  class="icon brands style2 fa-linkedin"
-                  ><span class="label">LinkedIn</span></a
-                >
-              </li>
-            </ul>
-          </section>
-        </div>
-      </footer>
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
