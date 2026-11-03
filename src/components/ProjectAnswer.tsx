@@ -44,6 +44,17 @@ export function ProjectAnswer({ project }: { project: Project }) {
         <section key={i} className="space-y-3">
           {section.heading && <h3 className="font-sans text-base font-semibold">{section.heading}</h3>}
           {section.paragraphs?.map((p, j) => <p key={j}>{p}</p>)}
+          {section.images?.map((img) => (
+            // Diagrams are detailed, so clicking opens the full-size image in a new tab.
+            <a key={img.src} href={img.src} target="_blank" rel="noreferrer" className="block">
+              <img
+                src={img.src}
+                alt={img.alt}
+                loading="lazy"
+                className="w-full rounded-xl border border-border bg-white transition hover:border-accent/60"
+              />
+            </a>
+          ))}
           {section.bullets && (
             <ul className="list-disc space-y-1 pl-6">
               {section.bullets.map((b) => (
