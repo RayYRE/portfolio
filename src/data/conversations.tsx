@@ -28,7 +28,7 @@ const pages: Conversation[] = [
           passion for software development and problem solving.
         </p>
         <p>
-          I'm particularly interested in <strong>backend development</strong>: building APIs and understanding how the
+          I'm particularly interested in backend development: building APIs and understanding how the
           different parts of a system work together. Through university and personal projects I've gained hands-on
           experience with JavaScript, Node.js, Express, databases and API integrations.
         </p>
