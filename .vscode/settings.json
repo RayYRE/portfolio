@@ -1,0 +1,5 @@
+{
+  // Wrap long lines on screen (e.g. paragraphs in src/data/*.ts). Doesn't change the files themselves.
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent"
+}
