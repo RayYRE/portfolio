@@ -1,4 +1,6 @@
 export type ProjectSection = {
+  /** Shown below the paragraphs. Paths are relative to public/, e.g. "/images/recallguard/UserStory.png". */
+  images?: { src: string; alt: string }[];
   heading?: string;
   paragraphs?: string[];
   bullets?: string[];
@@ -23,7 +25,9 @@ export const projects: Project[] = [
     award: "CISSA Catalyst Hackathon — Runner Up",
     summary:
       "An interactive map of live music venues that lets people check and share their accessibility features.",
+    image: "/images/FindMine.gif",
     tech: ["Leaflet", "Full stack"],
+    links: [{ label: "Devpost", href: "https://devpost.com/software/findmine" }],
     sections: [
       {
         paragraphs: [
@@ -105,6 +109,55 @@ export const projects: Project[] = [
           "Collaborating with team members",
           "Using GitHub more effectively",
           "The basics of game making and game engines",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "recall-guard",
+    title: "Recall Guard",
+    award: "Capstone Project - IT Project (COMP30022)",
+    summary:
+      "A web application that scans medical product barcodes and uses OCR and FDA data to identify recalled products, helping users verify product safety quickly and easily.",
+    image: "/images/RecallGuardDemoCut.gif",
+    tech: ["Jira", "Confluence", "Playwright", "React", "Node.js", "Express.js", "EasyOCR"],
+    links: [],
+    sections: [
+      {
+        heading: "Summary",
+        paragraphs: [
+          "For this project, I collaborated with 4 other peers in an Agile environment to design and make an app for our client, Medical Pantry. During the project, we had to gather and document client requirements as well as our discussions and translating their needs into system designs and functional specifications. We then developed an application that identifies recalled medical products through barcode scanning, image-based text recognition, and verification against the FDA database.",
+        ],
+      },
+      {
+        images: [{ src: "/images/recallguard/UserStory.png", alt: "Recall Guard user story" }],
+        heading: "Gathering and Documenting Client Requirements",
+        paragraphs: [
+          "The first key step in the project was gathering and clarifying the client's requirements to establish a clear understanding of the app's goals and expected functionality. Our team chose Confluence for project documentation due to its integration with Jira, allowing us to keep requirements and development tasks organised throughout the project. We documented the project requirements, user stories, user story maps, and user personas to translate the client's needs into development objectives and maintain a shared understanding across the team.",
+        ],
+      },
+      {
+        images: [{ src: "/images/recallguard/DomainDiagram.png", alt: "Recall Guard domain model diagram" }],
+        heading: "Diagrams and Models",
+        paragraphs: [
+          "We created a range of system models and diagrams to visualise the application's structure, behaviour, and requirements before and during development. These included System Sequence Diagrams, System Diagrams, Design Class Diagrams, Motivational Models, Domain Models, and State Machine Diagrams. Each model provided a different perspective of the system, helping our team understand system interactions and stay on the same page, it also defines relationships between components and establish a clearer foundation for implementation.",
+        ],
+      },
+      {
+        heading: "Agile Development",
+        paragraphs: [
+          "Throughout the project, our team followed an Agile development workflow, holding two meetings each week, including regular stand-ups to discuss progress, upcoming tasks, and any blockers.",
+          "We used Jira to manage our project board, assign tasks, and track development progress across the team. Confluence served as our central documentation platform, where we recorded meeting discussions, project updates, requirements, and design decisions.",
+          "The project was organised into two sprints, incorporating sprint planning and retrospective activities. These sessions allowed us to establish development priorities, review our progress, identify areas for improvement, and adapt our workflow throughout the project."
+        ],
+      },
+      {
+        heading: "What I learnt",
+        bullets: [
+          "Translating Client requirements into a system",
+          "Importance of documentation",
+          "Agile practices",
+          "Importance of quality assurance",
         ],
       },
     ],

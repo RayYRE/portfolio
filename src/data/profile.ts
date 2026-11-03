@@ -6,7 +6,7 @@ export type Social = { label: string; href: string; icon: IconType };
 export const profile = {
   name: "Yap Ray Ern",
   firstName: "Ray Ern",
-  tagline: "Computer Science graduate · University of Melbourne",
+  tagline: "Computer Science graduate · The University of Melbourne",
   email: "rayern@gmail.com",
   phone: "+61 434 858 615",
   resume: "/images/RayErnYap_Resume2026.pdf",
