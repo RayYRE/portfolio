@@ -1,9 +1,12 @@
-import type { ReactNode } from "react";
+import { lazy, Suspense, type ReactNode } from "react";
 import { Link } from "react-router";
 import { LuFileText, LuMail } from "react-icons/lu";
 import { ProjectAnswer, ProjectCard } from "../components/ProjectAnswer";
 import { profile, socials } from "./profile";
 import { getProject, projects } from "./projects";
+
+// Lazy so pdf.js (~400 KB) only loads when someone opens the resume.
+const ResumeViewer = lazy(() => import("../components/ResumeViewer"));
 
 export type Conversation = {
   slug: string;
@@ -113,10 +116,12 @@ const pages: Conversation[] = [
     answer: () => (
       <>
         <p>Of course — here's my latest resume:</p>
+        <Suspense fallback={<div className="h-64 rounded-xl border border-border" />}>
+          <ResumeViewer file={profile.resume} />
+        </Suspense>
         <a
           href={profile.resume}
-          target="_blank"
-          rel="noreferrer"
+          download
           className="flex items-center gap-3 rounded-xl border border-border bg-input p-4 font-sans transition hover:border-accent/60"
         >
           <span className="grid size-10 place-items-center rounded-lg bg-surface-hover text-accent">
@@ -124,7 +129,7 @@ const pages: Conversation[] = [
           </span>
           <span>
             <span className="block font-medium">RayErnYap_Resume2026.pdf</span>
-            <span className="block text-sm text-muted">PDF · opens in a new tab</span>
+            <span className="block text-sm text-muted">PDF · download</span>
           </span>
         </a>
       </>
