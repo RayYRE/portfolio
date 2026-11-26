@@ -24,7 +24,7 @@ export const projects: Project[] = [
     title: "Careless Tools DVI",
     award: "Calculation tool for game Deep Vein Idle",
     summary:
-      "A roguelike where players experiment with different combinations of spells to survive.",
+      "A calculation tool for players to optimise their decisions",
     image: "/images/CarelessToolsDemo.gif",
     tech: ["Userscript", "JavaScript"],
     links: [{ label: "CarelessToolsDVI", href: "https://carelesstoolsdvi.carelesscapybara.workers.dev/" }],
